@@ -36,13 +36,13 @@ body {
     padding: 8px;
     border: 1px solid #a5af4c;
     border-radius: 5px;
-    background-color: #282c34; /* Fondo oscuro para el input */
-    color: #ffffff; /* Texto en azul claro */
+    background-color: #282c34;
+    color: #ffffff;
   }
   
   button {
-    background-color: #3d21de; /* Fondo verde oscuro para el botón */
-    color: #fff; /* Texto blanco */
+    background-color: #3d21de;
+    color: #fff; 
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -52,6 +52,16 @@ body {
   }
   
   button:hover {
-    background-color: #f16536; /* Cambio de color en hover */
+    background-color: #f16536;
   }
+
+  .card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
   

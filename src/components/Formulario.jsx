@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 function Formulario({ onFormSubmit }) {
   const [nombre, setNombre] = useState('');
   const [musicaFavorita, setMusicaFavorita] = useState('');
-  const [enviado, setEnviado] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
-    setEnviado(true);
     onFormSubmit({ nombre, musicaFavorita });
+    setNombre('');
+    setMusicaFavorita('');
   };
 
   return (
@@ -36,11 +35,8 @@ function Formulario({ onFormSubmit }) {
         <br />
         <button type="submit">Enviar</button>
       </form>
-
-      
     </div>
   );
 }
 
 export default Formulario;
-
